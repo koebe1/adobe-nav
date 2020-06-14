@@ -1,0 +1,83 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    border: 1px solid black;
+}
+
+
+.menu >li{
+    display: inline;
+    padding: 0 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid red;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+
+.active {
+    position: absolute;
+    list-style: none;
+    padding-left: 20px;
+    display: block;
+}
+
+.fa-chevron-down-active {
+    transform: rotateX(180deg);
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #FA0F01;
+}
+
+.logo span {
+    font-weight: 600;
+
+}
+
+.fa-adobe {
+    font-size: 28px;
+    padding-right: 10px;
+}
+
+.search-sign-in {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-sign-in i {
+    margin: 0 12px;
+    transform: rotateY(180deg);
+
+}
+
+.search-sign-in span {
+    font-size: 12px;
+    margin: 0 20px;
+}
