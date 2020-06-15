@@ -1,5 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+/* import dropdown css-file */
+@import './dropdown.css';
 
 *{
     padding: 0px;
@@ -9,43 +11,30 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-color: grey;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
-    height: 10vh;
-    border: 1px solid black;
+    height: 60px;
+    background-color: white;
 }
 
 
-.menu >li{
-    display: inline;
-    padding: 0 20px;
+.menu-element {
+    display: inline-block;
+    position: relative;
+    padding: 0;
+    margin: 0 10px;
     font-size: 12px;
     font-weight: 600;
-    border: 1px solid red;
     cursor: pointer;
-}
 
-.dropdown {
-    position: absolute;
-    list-style: none;
-    padding-left: 20px;
-    display: none;
 }
-
-.active {
-    position: absolute;
-    list-style: none;
-    padding-left: 20px;
-    display: block;
-}
-
-.fa-chevron-down-active {
-    transform: rotateX(180deg);
-}
-
 
 
 .logo {
